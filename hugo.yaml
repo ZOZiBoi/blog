@@ -45,11 +45,11 @@ menu:
       url: "https://github.com/ZOZiBoi"
       params:
         icon: github
-    - name: Twitter
+    - name: Bluesky
       weight: 7
-      url: "https://twitter.com/zoraized_it"
+      url: "https://bsky.app/profile/zoziboi.bsky.social"
       params:
-        icon: x-twitter
+        icon: bluesky
 
 params:
   navbar:
