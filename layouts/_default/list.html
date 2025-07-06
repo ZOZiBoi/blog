@@ -5,11 +5,12 @@
     <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
       <br class="hx-mt-1.5 hx-text-sm">
       <h1 class="hx-text-center hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">{{ .Title }}</h1>
-      <div class="content">
+      <div class="content hx-mt-6">
         {{ .Content }}
       </div>
       
-      {{ range (where .Site.RegularPages "Section" "blog") }}
+      {{ if .Pages }}
+      {{ range .Pages }}
       <div class="hx-mb-10">
         <h3>
           <a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-text-2xl" href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -28,8 +29,9 @@
         <p class="hx-opacity-50 hx-text-sm hx-mt-4 hx-leading-7">{{ .Date.Format "January 2, 2006" }}</p>
       </div>
       {{ end }}
+      {{ end }}
     </main>
   </article>
   <div class="max-xl:hx-hidden hx-h-0 hx-w-64 hx-shrink-0"></div>
 </div>
-{{ end }}
+{{ end }} 
