@@ -47,7 +47,7 @@ menu:
         icon: github
     - name: Bluesky
       weight: 7
-      url: "https://bsky.app/profile/zoziboi.bsky.social"
+      url: "https://bsky.app/profile/zoraizanwar.me"
       params:
         icon: bluesky
 
